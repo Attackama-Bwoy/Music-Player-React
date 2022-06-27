@@ -1,41 +1,38 @@
-# Hello World with React boilerplate
-<p>
-  <a href="https://gitpod.io#https://github.com/4GeeksAcademy/react-hello.git"><img src="https://raw.githubusercontent.com/4GeeksAcademy/react-hello/master/open-in-gitpod.svg?sanitize=true" />
-  </a>
-</p>
+# Music Player React
 
-This template is similar to create-react-app but it's meant for 4Geeks Academy students.
+Let's create a MP3 player that works similar to Spotify ![Todo List](https://github.com/breatheco-de/exercise-music-player-react/blob/master/preview.gif?raw=true).
 
-##### Download the boilerplate using git
+The buttons should always remain at the bottom of the viewport (use position fixed for that).
+You only need to implement the Play, Pause, Next and previous buttons.
 
-```
-$ git clone https://github.com/4GeeksAcademy/react-hello.git
-$ cd react-hello
-```
+## 🌱  How to start this project
 
-##### and install the npm package:
-```
-$ npm install
-```
+Do not clone this repository.
 
-## Start coding!
+The first step to start coding is cloning the [react.js boilerplate](https://github.com/4GeeksAcademy/react-hello) on your local computer or opening it using gitpod.
 
-For Windows, Mac, Linux or Gitpod, start the webpack server with live reload:
-- `$ npm run start`
+a) If using Gitpod (recommended) you can clone the boilerplate by [clicking here](https://gitpod.io#https://github.com/4GeeksAcademy/react-hello).
 
-You can update the `styles/index.css` or `js/index.js` depending on your needs.
-Add more files into your, `./src/js/components` or styles folder as you need them.
+b) If working locally type the following command from your command line: 
+```sh
+$ git clone https://github.com/4GeeksAcademy/react-hello
+````
 
-## Publish your website!
+💡 Important: Remember to create a new repository, update the remote (`git remote set-url origin <your new url>`), and upload the code to your new repository using `add`, `commit` and `push`.
 
-This boilerplate is 100% compatible with the free [github pages](https://pages.github.com/) and [vercel](https://vercel.com/) hosting.
+## 📝 Requirements
 
-It takes just 2 minutes to deploy, [click here to start the process](https://github.com/4GeeksAcademy/react-hello/blob/master/docs/DEPLOY.md).
+- List the songs from [the Sounds API](http://assets.breatheco.de/apis/sound/) using the Fetch API.
+- When the user clicks on a song, the player it must start playing it.
+- When the user clicks on the "next" button the player should start playing the next song from the list, if there is no next song then it should start over by playing the first song of the list, the same applies for the "previous" button.
+- Use the react ref attribute to get the audio tag from the DOM.
+- Make sure to have only one `<audio>` tag on the entire project, use `ref` to change its src url.
 
-## Other features
+## 😎 Feeling Confident?
 
-- Automatic Code Formatting: Use of [Prettier](https://prettier.io/) for automatic code indentation and formatting.
-- Error reporting: Use of [eslint](https://eslint.org/) for better error reporting.
-- Hot Deploy: Use of [Webpack Development Server](https://webpack.js.org/configuration/dev-server/) for hot deploy and live reload.
-- One-command publish of the code to github pages with `npm run deploy:github`.
-- Babel 7 (really fast).
+The following features are not needed for the final solution, but you can develop them if you feel confident enough:
+
+- `+1` Implement implement volume control: two buttons, one to rise and one to lower the volume.
+- `+1` Repeat mode button: when activated, the current song will repeat forever until deativated.
+- `+2` Shuffle functionality: the songs will play randomly instead of in order.
+- `+5` Implement slider timeline: The slider will move with the song accordingly, if clicked the song will jump to that time.
